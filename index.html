@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/delfin.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Flipper</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <section class="sections-container">
+        <section class="section-bajoHeader">
+          <h1>Color Flipper 🐬</h1>
+          <p>Color Flipper es una aplicación realizada con <strong>HTML5</strong>, <strong> CSS3</strong> y <strong>JS</strong> hecha para quienes necesiten maquetar una página web, o tener una guía de como hacerlo.
+            Consta de tres "partes", una Navbar, un cuerpo principal que llamamos Main y un pie de página llamado Footer. Para interactuar con la aplicación 
+            sólo se debe elegir un color y que parte se desea cambiar.</p>
+        </section>
+        <section class="select-color">
+          <h5>Primero elije un color</h5>
+          <div id="app">
+              <select id="color-picker">
+                <option value="#fff">White</option>
+              </select>
+          </div>
+        </section>
+        <section class="select-color">
+          <h5>Ahora elije que quieres pintar</h5>
+          <select id="select-document">
+            <option value="">Opciones</option>
+            <option value="nav">Nav</option>
+            <option value="main">Main</option>
+            <option value="footer">Footer</option>
+            <option value="aboutUsButton">About Us</option>
+            <option value="productsButton">Products</option>
+            <option value="homeButton">Home</option>
+          </select>
+        </section>  
+      </section>
+      <nav>
+        <div class="logo-container">
+          <div class="img-container">
+            <img src="/creative-commons.png" alt="Imágen del Logo">
+          </div>
+          <h6>⬅Imágen del Logo</h6>
+          <h5>Estás en la Navbar</h5>
+        </div>
+        <ul>
+          <li class="li">About Us</li>
+          <li class="li">Products</li>
+          <li class="li">Home</li>
+        </ul>
+      </nav>
+    </header>
+    <!-- main -->
+    <main>
+      <h2>Estás en el main</h2>
+      <div id="texto"></div>
+    </main>
+    <!-- footer -->
+    <div class="footer-box">
+      <h4>Estás en el footer</h4>
+    </div>
+    <footer id="footer">
+      <div class="footer-info">
+        <!-- <a target="_blank" href="https://proyecto-portfolio-eta.vercel.app/#"> -->
+          <p>Creado por Gabi-Garcia</p>
+        </a>
+        <div class="image-container">
+          <img src="/WhatsApp Image 2023-05-15 at 17.02.52.jpeg" alt="Imagen de Gabriel">
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
