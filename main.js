@@ -16,12 +16,32 @@ const COLOR_PALETTE = {
 const elegisteColor = document.getElementById('texto')/**Hola, ya elegiste el color...*/
 const colorPickerSelect = document.querySelector('#color-picker');
 const colorName = document.querySelector('#color-name');
+const colorTexto1 = document.querySelector('.texto1');
+const textarea = document.getElementById("miTexto");
+const charCount = document.getElementById("charCount");
+
+
 const nav = document.body.lastChild.parentElement.children[0].children[1];
 const aboutUsButton = document.body.lastChild.parentElement.children[0].children[1].children[1].children[0]
 const productsButton = document.body.lastChild.parentElement.children[0].children[1].children[1].children[1]
 const homeButton = document.body.lastChild.parentElement.children[0].children[1].children[1].children[2]
 const main = document.body.lastChild.parentElement.children[1];
+const texto1 = document.body.lastChild.parentElement.children[1].children[1];
+const texto2 = document.body.lastChild.parentElement.children[1].children[2];
+const texto3 = document.body.lastChild.parentElement.children[1].children[3];
+const textoPropio =  document.body.lastChild.parentElement.children[1].children[5].children[0];
 const footer = document.body.lastChild.parentElement.children[2]
+
+
+  
+  textarea.addEventListener("input", function () {
+    this.style.height = "auto";
+    this.style.height = (this.scrollHeight) + "px";
+    const remainingChars = 600 - this.value.length;
+    charCount.textContent = `Caracteres restantes: ${remainingChars}`;
+  });
+
+
 const addOptionsToColorPicker = () => {
     const colorPickerSelect = document.querySelector('#color-picker')
     Object.keys(COLOR_PALETTE).forEach((color)=> {
@@ -51,7 +71,7 @@ const addEventListenerToColorPicker = () => {
                     footer.style.backgroundColor = newColor
                     }
                     if(bodyDocument === 'aboutUsButton'){
-                        aboutUsButton.style.backgroundColor = newColor
+                        aboutUsButton.style.backgroundColor = newColor 
                         }
                         if(bodyDocument === 'productsButton'){
                             productsButton.style.backgroundColor = newColor
@@ -59,6 +79,18 @@ const addEventListenerToColorPicker = () => {
                             if(bodyDocument === 'homeButton'){
                                 homeButton.style.backgroundColor = newColor
                                 }
+                                if(bodyDocument === 'texto1'){
+                                    texto1.style.backgroundColor = newColor
+                                    }
+                                    if(bodyDocument === 'texto2'){
+                                        texto2.style.backgroundColor = newColor
+                                        }
+                                        if(bodyDocument === 'texto3'){
+                                            texto3.style.backgroundColor = newColor
+                                            }
+                                            if(bodyDocument === 'textoPropio'){
+                                                textoPropio.style.backgroundColor = newColor
+                                                }
                 })
             }
             addEventListenerToSelectDocument();  

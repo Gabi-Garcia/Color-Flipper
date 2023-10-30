@@ -12,9 +12,13 @@
       <section class="sections-container">
         <section class="section-bajoHeader">
           <h1>Color Flipper 🐬</h1>
-          <p>Color Flipper es una aplicación realizada con <strong>HTML5</strong>, <strong> CSS3</strong> y <strong>JS</strong> hecha para quienes necesiten maquetar una página web, o tener una guía de como hacerlo.
-            Consta de tres "partes", una Navbar, un cuerpo principal que llamamos Main y un pie de página llamado Footer. Para interactuar con la aplicación 
-            sólo se debe elegir un color y que parte se desea cambiar.</p>
+          <p>©️<strong>Color Flipper</strong> es una aplicación realizada con <strong>HTML5</strong>, <strong>CSS3</strong> y <strong>JavaScript</strong>,
+             diseñada para satisfacer las necesidades
+             de quienes buscan maquetar una página web o recibir orientación al respecto. La aplicación se compone de tres elementos clave:
+             una barra de navegación (Navbar),
+              un cuerpo principal que denominamos Main y un pie de página conocido como Footer.
+            Además, ofrecemos la posibilidad de escribir tu propio texto, con un límite generoso de hasta 600 caracteres. Para interactuar 
+            con la aplicación, simplemente elige un color y decide qué parte deseas modificar</p>
         </section>
         <section class="select-color">
           <h5>Primero elije un color</h5>
@@ -29,11 +33,15 @@
           <select id="select-document">
             <option value="">Opciones</option>
             <option value="nav">Nav</option>
-            <option value="main">Main</option>
-            <option value="footer">Footer</option>
             <option value="aboutUsButton">About Us</option>
             <option value="productsButton">Products</option>
             <option value="homeButton">Home</option>
+            <option value="main">Main</option>
+            <option value="texto1">Texto-1</option>
+            <option value="texto2">Texto-2</option>
+            <option value="texto3">Texto-3</option>
+            <option value="textoPropio">TextoPropio</option>
+            <option value="footer">Footer</option>
           </select>
         </section>  
       </section>
@@ -55,6 +63,32 @@
     <!-- main -->
     <main>
       <h2>Estás en el main</h2>
+      <p class="texto1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima aut, illo numquam dicta aspernatur 
+        consequuntur hic eligendi! Temporibus deleniti, officiis expedita accusamus, 
+        animi fugiat quam fugit odio possimus minus quidem.
+      </p>
+      <p class="texto2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima aut, illo numquam dicta aspernatur 
+        consequuntur hic eligendi! Temporibus deleniti, officiis expedita accusamus, 
+        animi fugiat quam fugit odio possimus minus quidem.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima aut, illo numquam dicta aspernatur 
+        consequuntur hic eligendi! Temporibus deleniti, officiis expedita accusamus, 
+        animi fugiat quam fugit odio possimus minus quidem.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima aut, illo numquam dicta aspernatur 
+        consequuntur hic eligendi! Temporibus deleniti, officiis expedita accusamus, 
+        animi fugiat quam fugit odio possimus minus quidem.
+      </p>
+      <p class="texto3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima aut, illo numquam dicta aspernatur 
+        consequuntur hic eligendi! Temporibus deleniti, officiis expedita accusamus, 
+        animi fugiat quam fugit odio possimus minus quidem.
+      </p>
+      <h4>Escribe tu texto:</h4>
+      <div class="text-area">
+        <textarea class="miTexto" id="miTexto" name="miTexto" rows="1"  style="resize:vertical;" style="width:100%" style="border:0" maxlength="600"></textarea>
+      </div>
+      <p id="charCount">Caracteres restantes: 600</p>
       <div id="texto"></div>
     </main>
     <!-- footer -->
@@ -62,14 +96,32 @@
       <h4>Estás en el footer</h4>
     </div>
     <footer id="footer">
-      <div class="footer-info">
-        <!-- <a target="_blank" href="https://proyecto-portfolio-eta.vercel.app/#"> -->
-          <p>Creado por Gabi-Garcia</p>
-        </a>
-        <div class="image-container">
-          <img src="/WhatsApp Image 2023-05-15 at 17.02.52.jpeg" alt="Imagen de Gabriel">
-        </div>
-      </div>
+      <footer>
+        <ul>
+            <li>
+              <a href="https://github.com/Gabi-Garcia"  target="_blank">
+                <div class="imgFooter">
+                  <img src="/github (1).png" alt="Github-img">
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/gabriel-garcia-ab029b210/" target="_blank">
+                <div class="imgFooter">
+                  <img src="/logotipo-de-linkedin (1).png" alt="Linkedin-img">
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:gabriel.garcia.development@gmail.com">
+                <div class="imgFooter">
+                  <img src="/email.png" alt="email-img">
+                </div>
+              </a>
+            </li>      
+          </ul>
+          <p>©️Creado por Gabi-Garcia</p>
+    </footer>
     </footer>
     <script type="module" src="/main.js"></script>
   </body>
