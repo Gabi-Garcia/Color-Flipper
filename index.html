@@ -20,14 +20,16 @@
             Además, ofrecemos la posibilidad de escribir tu propio texto, con un límite generoso de hasta 600 caracteres. Para interactuar 
             con la aplicación, simplemente elige un color y decide qué parte deseas modificar</p>
         </section>
+        
         <section class="select-color">
           <h5>Primero elije un color</h5>
           <div id="app">
-              <select id="color-picker">
-                <option value="#fff">White</option>
-              </select>
+            <select id="color-picker">
+              <option value="#fff">White</option>
+            </select>
           </div>
         </section>
+        <div id="texto"></div>
         <section class="select-color">
           <h5>Ahora elije que quieres pintar</h5>
           <select id="select-document">
@@ -45,14 +47,15 @@
           </select>
         </section>  
       </section>
+
       <nav>
         <div class="logo-container">
           <div class="img-container">
             <img src="/creative-commons.png" alt="Imágen del Logo">
           </div>
-          <h6>⬅Imágen del Logo</h6>
-          <h5>Estás en la Navbar</h5>
+          <h8>Imágen del Logo</h8>
         </div>
+        <h5>Estás en la Navbar</h5>
         <ul>
           <li class="li">About Us</li>
           <li class="li">Products</li>
@@ -60,9 +63,12 @@
         </ul>
       </nav>
     </header>
+ 
     <!-- main -->
+  
     <main>
       <h2>Estás en el main</h2>
+
       <p class="texto1">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima aut, illo numquam dicta aspernatur 
         consequuntur hic eligendi! Temporibus deleniti, officiis expedita accusamus, 
@@ -89,12 +95,13 @@
         <textarea class="miTexto" id="miTexto" name="miTexto" rows="1"  style="resize:vertical;" style="width:100%" style="border:0" maxlength="600"></textarea>
       </div>
       <p id="charCount">Caracteres restantes: 600</p>
-      <div id="texto"></div>
+    
     </main>
     <!-- footer -->
     <div class="footer-box">
       <h4>Estás en el footer</h4>
     </div>
+
     <footer id="footer">
       <footer>
         <ul>
@@ -120,7 +127,7 @@
               </a>
             </li>      
           </ul>
-          <p>©️Creado por Gabi-Garcia</p>
+          <p>Creado por Gabi-Garcia</p>
     </footer>
     </footer>
     <script type="module" src="/main.js"></script>

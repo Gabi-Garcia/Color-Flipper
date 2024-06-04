@@ -22,9 +22,9 @@ const charCount = document.getElementById("charCount");
 
 
 const nav = document.body.lastChild.parentElement.children[0].children[1];
-const aboutUsButton = document.body.lastChild.parentElement.children[0].children[1].children[1].children[0]
-const productsButton = document.body.lastChild.parentElement.children[0].children[1].children[1].children[1]
-const homeButton = document.body.lastChild.parentElement.children[0].children[1].children[1].children[2]
+const aboutUsButton = document.body.lastChild.parentElement.children[0].children[1].children[2].children[0]
+const productsButton = document.body.lastChild.parentElement.children[0].children[1].children[2].children[1]
+const homeButton = document.body.lastChild.parentElement.children[0].children[1].children[2].children[2]
 const main = document.body.lastChild.parentElement.children[1];
 const texto1 = document.body.lastChild.parentElement.children[1].children[1];
 const texto2 = document.body.lastChild.parentElement.children[1].children[2];
@@ -58,20 +58,20 @@ const addEventListenerToColorPicker = () => {
         document.body.style.backgroundColor = 'white';
         const colorNameText = `${COLOR_PALETTE[newColor]} | ${newColor} `;
        // colorName.innerText = COLOR_PALETTE[newColor] ? colorNameText : '#fff'
-        elegisteColor.innerHTML += `<h5>Elejiste el color: </h5><h3>-${COLOR_PALETTE[newColor]}- </h3><div class="newColor"> ${newColor} </div>`;  
+        elegisteColor.innerHTML += `<h5>Elejiste el color:</h5><h3 style="color: ${newColor}">${COLOR_PALETTE[newColor]}</h3><div class="newColor" style="background-color: ${newColor}"> ${newColor} </div>`;  
         const addEventListenerToSelectDocument = ()=>{
             const selectDocument = document.querySelector('#select-document')
             selectDocument.addEventListener('change',(e)=>{
                 const bodyDocument = e.target.value
                     if(bodyDocument === 'nav'){
                     nav.style.backgroundColor = newColor
-                    }else if(bodyDocument === 'main'){
+                    }if(bodyDocument === 'main'){
                     main.style.backgroundColor = newColor
-                    }else if (bodyDocument === 'footer'){
+                    }if (bodyDocument === 'footer'){
                     footer.style.backgroundColor = newColor
                     }
                     if(bodyDocument === 'aboutUsButton'){
-                        aboutUsButton.style.backgroundColor = newColor 
+                       aboutUsButton.style.backgroundColor = newColor
                         }
                         if(bodyDocument === 'productsButton'){
                             productsButton.style.backgroundColor = newColor
